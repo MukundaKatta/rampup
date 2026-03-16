@@ -1,0 +1,19 @@
+{
+  "name": "@rampup/supabase",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "db:migrate": "supabase db push",
+    "db:reset": "supabase db reset",
+    "db:diff": "supabase db diff",
+    "functions:serve": "supabase functions serve",
+    "functions:deploy": "supabase functions deploy"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.47.0"
+  },
+  "devDependencies": {
+    "supabase": "^1.220.0",
+    "typescript": "^5.7.2"
+  }
+}

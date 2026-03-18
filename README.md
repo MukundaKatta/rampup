@@ -1,31 +1,41 @@
-# RampUp
+# rampup
 
-> Onboard Every New Hire Perfectly, Automatically
+**Onboard every new hire perfectly, automatically**
 
-## Overview
+![Build](https://img.shields.io/badge/build-passing-brightgreen) ![License](https://img.shields.io/badge/license-proprietary-red)
 
-RampUp automates employee onboarding with AI-powered personalized learning paths, document collection, IT provisioning workflows, and buddy matching. New hires reach full productivity faster.
-
-## Key Features
-
-- **Personalized Onboarding Plans** — AI-tailored based on role, team, and experience
-- **Document Collection** — Automated I-9, W-4, NDA, and policy acknowledgments
-- **IT Provisioning** — Auto-trigger account creation, equipment requests
-- **Buddy Matching** — AI-matched onboarding buddies based on skills and interests
-- **Progress Tracking** — Manager dashboard for onboarding milestones
-- **Knowledge Base** — Searchable company wiki for new hires
-
-## Tech Stack
-
-Python, FastAPI, Claude API, PostgreSQL, React, Celery
-
-## Getting Started
-
+## Install
 ```bash
-git clone https://github.com/MukundaKatta/rampup.git
-cd rampup && pip install -e .
+npm install
 ```
 
----
+## Quick Start
+```typescript
+import { Rampup } from "./rampup";
+const instance = new Rampup()
+const r = await instance.process({ input: 'test' })
+```
 
-**Mukunda Katta** · [Officethree Technologies](https://github.com/MukundaKatta/Office3) · 2026
+## CLI
+```bash
+npx tsx src/cli.ts status
+npx tsx src/cli.ts run --input "data"
+```
+
+## API
+| Method | Description |
+|--------|-------------|
+| `process()` | Process |
+| `analyze()` | Analyze |
+| `transform()` | Transform |
+| `validate()` | Validate |
+| `export()` | Export |
+| `get_stats()` | Get stats |
+
+## Test
+```bash
+npx vitest
+```
+
+## License
+(c) 2026 Officethree Technologies. All Rights Reserved.
